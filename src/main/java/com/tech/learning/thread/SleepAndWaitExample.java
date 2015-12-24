@@ -15,9 +15,9 @@ public class SleepAndWaitExample {
 		public void run(){
 			synchronized(DUMMY){
 				try {
-					System.out.println("SleepThread begin " + new Date());
+					System.out.println(Thread.currentThread().getName()+ " SleepThread begin " + new Date());
 					Thread.sleep(10000);
-					System.out.println("SleepThread end " + new Date());
+					System.out.println(Thread.currentThread().getName()+ " SleepThread end " + new Date());
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
@@ -29,9 +29,9 @@ public class SleepAndWaitExample {
 		public void run(){
 			synchronized(DUMMY){
 				try {
-					System.out.println("WaitThread begin " + new Date());
+					System.out.println(Thread.currentThread().getName()+ " WaitThread begin " + new Date());
 					DUMMY.wait();
-					System.out.println("WaitThread end " + new Date());
+					System.out.println(Thread.currentThread().getName()+ " WaitThread end " + new Date());
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
@@ -41,11 +41,16 @@ public class SleepAndWaitExample {
 	
 	private final class NotifyThread extends Thread{
 		public void run(){
+			System.out.println(Thread.currentThread().getName()+ " NotifyThread out synchronized " + new Date());
 			synchronized(DUMMY){
-				System.out.println("NotifyThread begin " + new Date());
+				System.out.println(Thread.currentThread().getName()+ " NotifyThread begin " + new Date());
+				long t0 = System.currentTimeMillis();
+				while(System.currentTimeMillis() - t0 < 5000){//停顿5s
+					
+				}
 				DUMMY.notify();
-				//DUMMY.notifyAll();
-				System.out.println("NotifyThread end " + new Date());
+				DUMMY.notifyAll();
+				System.out.println(Thread.currentThread().getName()+ " NotifyThread end " + new Date());
 			}
 		}
 	}
@@ -55,7 +60,7 @@ public class SleepAndWaitExample {
 		
 		saw.new WaitThread().start();
 		Thread.sleep(100);
-		saw.new SleepThread().start();
+		saw.new SleepThread().start();//此时sleep占有锁，notify无法进入同步块，直到sleep结束，释放锁
 		Thread.sleep(100);
 		saw.new NotifyThread().start();
 

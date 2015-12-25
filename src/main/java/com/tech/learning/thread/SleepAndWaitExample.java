@@ -26,11 +26,17 @@ public class SleepAndWaitExample {
 	}
 	
 	private final class WaitThread extends Thread{
+		private final int timeout;
+		
+		public WaitThread(int timeout){
+			this.timeout = timeout;
+		}
+		
 		public void run(){
 			synchronized(DUMMY){
 				try {
 					System.out.println(Thread.currentThread().getName()+ " WaitThread begin " + new Date());
-					DUMMY.wait();
+					DUMMY.wait(timeout);
 					System.out.println(Thread.currentThread().getName()+ " WaitThread end " + new Date());
 				} catch (InterruptedException e) {
 					e.printStackTrace();
@@ -55,14 +61,27 @@ public class SleepAndWaitExample {
 		}
 	}
 	
+	
 	public static void main(String[] args) throws InterruptedException {
 		SleepAndWaitExample saw = new SleepAndWaitExample();
 		
-		saw.new WaitThread().start();
+		saw.new WaitThread(0).start();
 		Thread.sleep(100);
 		saw.new SleepThread().start();//此时sleep占有锁，notify无法进入同步块，直到sleep结束，释放锁
 		Thread.sleep(100);
 		saw.new NotifyThread().start();
+		
+		//测试wait(timeout),如果timeout时间到了，则进行后续操作
+//		saw.new WaitThread(1000).start();
+		
+		
+		//测试wait(timeout),如果timeout时间到了，则进行后续操作
+		//但是前提是WaitThread线程可以获得锁，而此时锁被NotifyThread占用，还是要等NotifyThread结束后才能进行后续操作
+//		saw.new WaitThread(1000).start();
+//		Thread.sleep(100);
+//		saw.new NotifyThread().start();
+		
+		
 
 	}
 

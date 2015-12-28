@@ -7,6 +7,8 @@
 
 [在java如何模拟多线程同时工作 -- 2015-12-27] (https://github.com/iranran/tech-articles/wiki/%E5%9C%A8java%E5%A6%82%E4%BD%95%E6%A8%A1%E6%8B%9F%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%97%B6%E5%B7%A5%E4%BD%9C)
 
+[JAVA IO 简要汇总  -- 2015-12-28](https://github.com/iranran/tech-articles/wiki/JAVA-IO-%E7%AE%80%E8%A6%81%E6%B1%87%E6%80%BB)
+
 [synchronized的作用是什么，synchronized和lock]
 
 [秒杀系统的设计]

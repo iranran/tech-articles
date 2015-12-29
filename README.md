@@ -9,6 +9,8 @@
 
 [JAVA IO 简要汇总  -- 2015-12-28](https://github.com/iranran/tech-articles/wiki/JAVA-IO-%E7%AE%80%E8%A6%81%E6%B1%87%E6%80%BB)
 
+[HashMap、Hashtable和ConcurrentHashMap区别  -- 2015-12-29](https://github.com/iranran/tech-articles/wiki/HashMap%E3%80%81Hashtable%E5%92%8CConcurrentHashMap%E5%8C%BA%E5%88%AB)
+
 [synchronized的作用是什么，synchronized和lock]
 
 [秒杀系统的设计]

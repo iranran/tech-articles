@@ -13,6 +13,8 @@
 
 [数据库索引相关知识  -- 2015-12-31](https://github.com/iranran/tech-articles/wiki/数据库索引相关知识)
 
+[ArrayList浅析  -- 2016-01-04](https://github.com/iranran/tech-articles/wiki/ArrayList浅析)
+
 [synchronized的作用是什么，synchronized和lock]
 
 [秒杀系统的设计]

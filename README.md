@@ -15,6 +15,9 @@
 
 [ArrayList浅析  -- 2016-01-04](https://github.com/iranran/tech-articles/wiki/ArrayList浅析)
 
+[说说Object -- 2016-01-05](https://github.com/iranran/tech-articles/wiki/说说Object)
+
+
 [synchronized的作用是什么，synchronized和lock]
 
 [秒杀系统的设计]

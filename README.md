@@ -17,6 +17,9 @@
 
 [说说Object -- 2016-01-05](https://github.com/iranran/tech-articles/wiki/说说Object)
 
+[MVCC简要概述 -- 2016-01-06](https://github.com/iranran/tech-articles/wiki/MVCC简要概述)
+
+
 
 [synchronized的作用是什么，synchronized和lock]
 

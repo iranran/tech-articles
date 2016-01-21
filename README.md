@@ -19,6 +19,8 @@
 
 [MVCC简要概述 -- 2016-01-06](https://github.com/iranran/tech-articles/wiki/MVCC简要概述)
 
+[Redis in action -- 2016-01-13](https://github.com/iranran/tech-articles/wiki/Redis in action)
+
 [Linux上的free命令详解 -- 2016-01-21](https://github.com/iranran/tech-articles/wiki/Linux上的free命令详解)
 
 

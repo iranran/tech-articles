@@ -19,6 +19,9 @@
 
 [MVCC简要概述 -- 2016-01-06](https://github.com/iranran/tech-articles/wiki/MVCC简要概述)
 
+[Linux上的free命令详解 -- 2016-01-21](https://github.com/iranran/tech-articles/wiki/Linux上的free命令详解)
+
+
 
 
 [synchronized的作用是什么，synchronized和lock]

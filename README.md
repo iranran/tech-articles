@@ -23,8 +23,11 @@
 
 [Linux上的free命令详解 -- 2016-01-21](https://github.com/iranran/tech-articles/wiki/Linux上的free命令详解)
 
+[spring之ioc -- 2016-02-22](https://github.com/iranran/tech-articles/wiki/spring之ioc)
 
+[动态代理 -- 2016-02-24](https://github.com/iranran/tech-articles/wiki/动态代理)
 
+[Cache相关 -- 2016-02-25](https://github.com/iranran/tech-articles/wiki/Cache相关)
 
 [synchronized的作用是什么，synchronized和lock]
 

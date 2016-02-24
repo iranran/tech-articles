@@ -25,7 +25,7 @@
 
 [spring之ioc -- 2016-02-22](https://github.com/iranran/tech-articles/wiki/spring之ioc)
 
-[线程安全 -- 2016-02-25](https://github.com/iranran/tech-articles/wiki/线程安全)
+[线程安全 -- 2016-02-24](https://github.com/iranran/tech-articles/wiki/线程安全)
 
 [动态代理 -- 2016-02-24](https://github.com/iranran/tech-articles/wiki/动态代理)
 
